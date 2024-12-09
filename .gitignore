@@ -1,2 +1,2 @@
-/latex_build/*
-!/latex_build/example.pdf
+/*latex_build/*
+!/*latex_build/example.pdf
