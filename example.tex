@@ -1,0 +1,108 @@
+% !TeX root = example.tex
+\documentclass[a4paper,12pt]{article} % Класс документа и настройки формата страницы
+
+% Подключаем пакеты
+\usepackage[utf8]{inputenc} % Кодировка
+\usepackage[T1]{fontenc}    % Кодировка шрифтов
+\usepackage[russian]{babel} 
+\usepackage{lmodern}        % Современные шрифты
+\usepackage{amsmath}        % Математические формулы
+\usepackage{graphicx}       % Работа с изображениями
+\usepackage{hyperref}       % Гиперссылки
+\usepackage[table,xcdraw]{xcolor} % Цвета для таблиц
+\usepackage{geometry}       % Настройка полей
+\geometry{a4paper, margin=1in} % Формат страницы
+
+\title{Примеры документа в LaTeX}
+\author{Автор: Василий Иванов}
+\date{\today}
+
+\begin{document}
+
+\maketitle % Заголовок документа
+\tableofcontents % Генерация оглавления
+\newpage
+
+\section{Введение}
+
+LaTeX — это мощная система вёрстки. С её помощью можно создавать документы любого уровня сложности, включая книги, статьи и презентации.
+
+\subsection{Особенности LaTeX}
+
+Основные преимущества:
+\begin{itemize}
+    \item Высокое качество верстки текста.
+    \item Поддержка сложных математических формул.
+    \item Удобная работа с таблицами и изображениями.
+    \item Автоматическая генерация оглавления, списков и ссылок.
+\end{itemize}
+
+\subsection{Пример кода}
+
+Это пример использования полужирного шрифта (\textbf{жирный}), \textit{курсива} и \underline{подчёркивания}. Вот пример гиперссылки: \href{https://www.latex-project.org}{официальный сайт LaTeX}.
+
+\section{Формулы}
+
+Встроенная поддержка математики — одно из главных достоинств LaTeX. Вот несколько примеров:
+\begin{itemize}
+    \item Формула в строке: \(E = mc^2\).
+    \item Формула отдельно:
+    \[
+    a^2 + b^2 = c^2
+    \]
+    \item Более сложная формула:
+    \[
+    \int_{0}^{\infty} e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
+    \]
+\end{itemize}
+
+\section{Списки}
+
+\subsection{Нумерованный список}
+\begin{enumerate}
+    \item Первый элемент.
+    \item Второй элемент.
+    \item Третий элемент.
+\end{enumerate}
+
+\subsection{Маркированный список}
+\begin{itemize}
+    \item Элемент A.
+    \item Элемент B.
+\end{itemize}
+
+\section{Таблицы}
+
+Пример простой таблицы:
+
+\begin{table}[h!]
+    \begin{tabular}{l|r|c}
+        \hline
+        \textbf{Заголовок 1} & \textbf{Заголовок 2} & \textbf{Заголовок 3} \\ \hline
+        Данные 1            & Данные 2            & Данные 3            \\ \hline
+        10                  & 20                  & 30                  \\ \hline
+    \end{tabular}
+    \caption{Пример таблицы}
+    \label{tab:example}
+\end{table}
+
+\section{Изображения}
+
+Вставка изображения с подписью:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image} % Замените example-image на имя файла
+    \caption{Пример изображения}
+    \label{fig:example}
+\end{figure}
+
+\section{Ссылки}
+
+Внутренняя ссылка: см. Таблицу~\ref{tab:example}. \\
+Внешняя ссылка: \href{https://www.latex-project.org}{LaTeX Project}.
+
+\section{Заключение}
+
+LaTeX — это универсальный инструмент для создания документов. Попробуйте его, чтобы раскрыть все возможности качественной верстки.
+
+\end{document}
